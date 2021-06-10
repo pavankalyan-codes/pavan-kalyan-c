@@ -1,0 +1,147 @@
+body {
+    position: relative;
+}
+
+@media (max-width: 960px) {
+    .top-menu {
+        display: block !important;
+    }
+    .sidenav {
+        display: none;
+    }
+    .main {
+        width: 100% !important;
+    }
+}
+
+.sec-2 {
+    background: #9741bd9c;
+}
+
+.sec-6 {
+    background: gold;
+}
+
+ul.nav-pills {
+    top: 20px;
+    position: fixed;
+    right: 80%;
+    left: 0%;
+}
+
+div.col-8 div {
+    height: 500px;
+}
+
+section {
+    height: 100vh;
+}
+
+.dp {
+    border-radius: 50%;
+    border: 5px solid #009688;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.top-banner {
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    position: relative;
+    height: 70px;
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .banner-text {
+        margin: 2px 0px 0px 0px;
+        position: absolute;
+        left: calc(50% - 100px);
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+hr {
+    background: #d4cece;
+    width: 100%;
+}
+
+.sidenav {
+    width: 20%;
+}
+
+.main {
+    width: 80%;
+}
+
+figure {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+}
+
+.fake-cursor {
+    font-size: 20px;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+a.active.nav-link {
+    background-color: transparent !important;
+    color: black;
+    border-left: 5px solid red;
+    border-radius: 0px;
+}
+
+section {
+    color: white;
+    padding: 50px;
+}
+
+.skills {
+    font-size: 20px;
+}
+
+.sec-1 {
+    background-image: linear-gradient( 41deg, rgb(124, 252, 160), rgb(64, 170, 66));
+}
