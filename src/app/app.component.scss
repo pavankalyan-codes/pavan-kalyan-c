@@ -6,6 +6,13 @@ body {
     .top-menu {
         display: block !important;
     }
+    .intro {
+        font-size: 1.7rem !important;
+        padding: 50px 10px 40px 0px !important;
+    }
+    .sec-1 {
+        height: auto;
+    }
     .sidenav {
         display: none;
     }
@@ -101,6 +108,49 @@ figure {
     margin: auto;
 }
 
+.intro {
+    font-size: 35px;
+    padding: 50px 100px 100px 0px;
+}
+
+.name {
+    background-image: linear-gradient(0deg, #dc5d39, #70cd6b 50%, #70cd6b);
+    border-radius: 1px;
+    padding: 0px 10px;
+}
+
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm-icon {
+    font-size: 30px;
+}
+
+.linkedin {
+    background: rgb(0, 119, 181);
+}
+
+.codepen {
+    background: white;
+}
+
+.color-black {
+    color: black;
+}
+
+.github {
+    background: black;
+}
+
+.social-icons {
+    justify-content: space-between;
+    display: flex;
+    width: 200px;
+}
+
 img {
     margin: auto;
     width: 100%;
@@ -147,5 +197,6 @@ section {
 }
 
 .sec-1 {
-    background-image: linear-gradient( 41deg, rgb(124, 252, 160), rgb(64, 170, 66));
+    background: #70cd6b;
+    min-height: 100vh;
 }
