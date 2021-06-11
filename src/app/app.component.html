@@ -50,16 +50,20 @@
                 <span class="skills">A {{ typewriter_display }}</span
         ><span class="fake-cursor">|</span>
                 <p class="intro">
-                    Self-taught, highly adaptive, passionate developer.Who is always curious about tech and always wanted to solve real life problems.
+                    Self-taught, highly adaptive, passionate developer.Who is always wanted to solve real life problems and curious about tech.
                 </p>
                 <div class="social-icons">
-                    <button class="linkedin icon-btn" mat-fab color="primary" aria-label="Linkedin profile">
+                    <a hidden href="https://www.linkedin.com/in/pavan-kalyan-c/" target="_blank" #linkedin></a>
+                    <button class="linkedin icon-btn" (click)="linkedin.click()" mat-fab color="primary" aria-label="Linkedin profile">
             <i class="sm-icon fab fa-linkedin"></i>
           </button>
-                    <button class="github icon-btn" mat-fab color="primary" aria-label="Github profile">
+                    <a hidden href="https://github.com/pavankalyan-codes" target="_blank" #github></a>
+                    <button (click)="github.click()" class="github icon-btn" mat-fab color="primary" aria-label="Github profile">
             <i class="sm-icon fab fa-github"></i>
           </button>
-                    <button class="icon-btn codepen" mat-fab color="primary" aria-label="Leetcode profile">
+
+                    <a hidden href="https://codepen.io/pavankalyan-c" target="_blank" #codepen></a>
+                    <button (click)="codepen.click()" class="icon-btn codepen" mat-fab color="primary" aria-label="Leetcode profile">
             <i class="sm-icon color-black fab fa-codepen"></i>
           </button>
                 </div>
