@@ -1,0 +1,102 @@
+$js: #efd930;
+$html: #e6622b;
+$css: #2850dd;
+$scss: #cf649a;
+$bootstrap: #7f5df1;
+$angular: #d83730;
+$node: #45823b;
+$git: #e44d30;
+$java: brown;
+.skill-icons {
+    i {
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 1px 15px -5px black;
+        margin: 10px;
+    }
+    .html {
+        color: $html;
+    }
+    i:hover,
+    .image-icon:hover {
+        animation: makeBig 2s linear;
+    }
+    @keyframes makeBig {
+        from {
+            transform: scale(1.05);
+        }
+        to {
+            transform: scale(1.1);
+        }
+    }
+    .css {
+        color: $css;
+    }
+    .scss {
+        color: $scss;
+    }
+    .bootstrap {
+        color: $bootstrap;
+    }
+    .js {
+        color: $js;
+    }
+    .angular {
+        color: $angular;
+    }
+    .node {
+        color: $node;
+    }
+    .git {
+        color: $git;
+    }
+    .java {
+        color: $java;
+    }
+}
+
+.heroku {
+    width: 55%;
+    margin: auto;
+}
+
+.image-icon {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 2px 1px 15px -5px black;
+    margin: 10px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.skills {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .skill-icons {
+        i {
+            height: 40px;
+            width: 40px;
+            font-size: 25px;
+        }
+    }
+    .image-icon {
+        height: 40px;
+        width: 40px;
+    }
+}

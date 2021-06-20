@@ -1,0 +1,29 @@
+<section class="sec-2">
+    <h1 class="bg-black color-white p-10">Experience</h1>
+
+    <div class="exp-content">
+        <div *ngFor="let exp of experienceDetails">
+            <ng-container [ngTemplateOutlet]="expCard" [ngTemplateOutletContext]="{ exp: exp }">
+            </ng-container>
+        </div>
+    </div>
+</section>
+
+<ng-template #expCard let-exp="exp">
+    <mat-card class="exp-card mt-3">
+        <div class="row d-flex justify-content-between">
+            <div class="d-flex">
+                <img tabindex="0" (click)="goToLink(exp.logoHref)" class="company-icon" href="www.tcs.com" [src]="exp.companyLogo" alt="" />
+                <h2>{{ exp.companyName }}</h2>
+            </div>
+            <h5 class="role">{{ exp.role }}</h5>
+        </div>
+        <hr />
+        <div class="row">
+            <ul>
+                <li *ngFor="let accomp of exp.accomplishments">{{ accomp }}</li>
+            </ul>
+        </div>
+        <div class="duration">{{ exp.duration }}</div>
+    </mat-card>
+</ng-template>

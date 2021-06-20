@@ -43,3 +43,20 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+section {
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.bg-black {
+    background: black;
+}
+
+.color-white {
+    color: white;
+}

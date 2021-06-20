@@ -1,0 +1,84 @@
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::ng-deep .mat-button-wrapper {
+        padding: 0;
+        line-height: 0;
+    }
+}
+
+.sm-icon {
+    font-size: 30px;
+}
+
+.scroll-text {
+    padding: 50px 0px;
+}
+
+.intro {
+    padding: 50px 100px 50px 0px;
+    font-size: 30px;
+}
+
+.linkedin {
+    background: rgb(0, 119, 181);
+}
+
+.codepen {
+    background: white;
+}
+
+.color-black {
+    color: black;
+}
+
+.github {
+    background: black;
+}
+
+.social-icons {
+    justify-content: space-between;
+    display: flex;
+    width: 200px;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.fake-cursor {
+    font-size: 20px;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+a.active.nav-link {
+    background-color: #a9aaba45 !important;
+    color: black;
+    border-left: 5px solid black;
+    border-radius: 0px;
+}
+
+.skills {
+    font-size: 20px;
+}
