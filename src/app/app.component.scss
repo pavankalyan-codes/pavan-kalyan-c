@@ -21,10 +21,6 @@ body {
     }
 }
 
-.sec-2 {
-    background: #9741bd9c;
-}
-
 .sec-6 {
     background: gold;
 }
@@ -185,9 +181,9 @@ img {
 }
 
 a.active.nav-link {
-    background-color: transparent !important;
+    background-color: #a9aaba45 !important;
     color: black;
-    border-left: 5px solid red;
+    border-left: 5px solid black;
     border-radius: 0px;
 }
 
@@ -198,9 +194,4 @@ section {
 
 .skills {
     font-size: 20px;
-}
-
-.sec-1 {
-    background: #70cd6b;
-    min-height: 100vh;
 }

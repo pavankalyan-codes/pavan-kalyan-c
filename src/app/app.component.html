@@ -21,82 +21,57 @@
                 </li>
                 <hr />
                 <li class="nav-item">
-                    <a class="nav-link active" href="#content1"> About </a>
+                    <a class="nav-link active" href="#content1"><i class="fas fa-address-card"></i> About
+          </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#content2"> Experience </a>
+                    <a class="nav-link" href="#content2">
+                        <i class="fas fa-briefcase"></i> Experience
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#content3"> Projects </a>
+                    <a class="nav-link" href="#content3"><i class="fas fa-laptop-code"></i> Projects
+          </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#content4"> Skills </a>
+                    <a class="nav-link" href="#content4"><i class="fas fa-chart-bar"></i> Skills
+          </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#content5"> Education </a>
+                    <a class="nav-link" href="#content5"><i class="fas fa-user-graduate"></i> Education
+          </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#content6"> Contact </a>
+                    <a class="nav-link" href="#content6"><i class="fas fa-paper-plane"></i> Contact
+          </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link"> Resume </a>
+                    <a class="nav-link" href="assets/PavanKalyanC_Resume.pdf"><i class="fas fa-folder"></i> Resume
+          </a>
                 </li>
             </ul>
         </nav>
 
         <div class="main">
-            <section id="content1" class="container-fluid sec-1">
-                <h1>Hi, I'm <span class="name">Pavan Kalyan C</span></h1>
-                <span class="skills">A {{ typewriter_display }}</span
-        ><span class="fake-cursor">|</span>
-                <p class="intro">
-                    Self-taught, highly adaptive, passionate developer.Who always wants to solve real life problems and curious about tech.
-                </p>
-                <div class="social-icons">
-                    <a hidden href="https://www.linkedin.com/in/pavan-kalyan-c/" target="_blank" #linkedin></a>
-                    <button class="linkedin icon-btn" (click)="linkedin.click()" mat-fab color="primary" aria-label="Linkedin profile">
-            <i class="sm-icon fab fa-linkedin"></i>
-          </button>
-                    <a hidden href="https://github.com/pavankalyan-codes" target="_blank" #github></a>
-                    <button (click)="github.click()" class="github icon-btn" mat-fab color="primary" aria-label="Github profile">
-            <i class="sm-icon fab fa-github"></i>
-          </button>
+            <div id="content1">
+                <app-about></app-about>
+            </div>
+            <div id="content2">
+                <app-experience></app-experience>
+            </div>
+            <div id="content3">
+                <app-projects></app-projects>
+            </div>
+            <div id="content4">
+                <app-skills></app-skills>
+            </div>
 
-                    <a hidden href="https://codepen.io/pavankalyan-c" target="_blank" #codepen></a>
-                    <button (click)="codepen.click()" class="icon-btn codepen" mat-fab color="primary" aria-label="Leetcode profile">
-            <i class="sm-icon color-black fab fa-codepen"></i>
-          </button>
-                </div>
-            </section>
-
-            <section id="content2" class="container-fluid sec-2">
-                <h1>Experience</h1>
-
-                <p></p>
-            </section>
-
-            <section id="content3" class="container-fluid bg-warning">
-                <h1>Projects</h1>
-
-                <p></p>
-            </section>
-
-            <section id="content4" class="container-fluid bg-info">
-                <h1>Skills</h1>
-
-                <p></p>
-            </section>
-
-            <section id="content5" class="container-fluid bg-dark">
-                <h1>Education</h1>
-
-                <p></p>
-            </section>
-            <section id="content6" class="container-fluid sec-6">
-                <h1>Contact</h1>
-
-                <p></p>
-            </section>
+            <div id="content5">
+                <app-education></app-education>
+            </div>
+            <div id="content6">
+                <app-contact></app-contact>
+            </div>
         </div>
     </div>
 </div>
