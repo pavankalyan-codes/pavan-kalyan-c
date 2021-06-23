@@ -6,8 +6,8 @@
     justify-content: space-evenly;
 }
 
-.p-5 {
-    padding: 5px;
+.pd-5 {
+    padding: 20px;
 }
 
 .contact-item {
@@ -15,4 +15,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 500px) {
+    .contact-item {
+        margin-left: 10px;
+    }
 }
