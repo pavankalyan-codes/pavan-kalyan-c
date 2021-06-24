@@ -11,7 +11,7 @@
 
 <ng-template #expCard let-exp="exp">
     <mat-card class="exp-card mt-3">
-        <div class="row d-flex justify-content-between">
+        <div class="row d-flex justify-content-between exp-row">
             <div class="d-flex">
                 <img tabindex="0" (click)="goToLink(exp.logoHref)" class="company-icon" href="www.tcs.com" [src]="exp.companyLogo" alt="" />
                 <h2>{{ exp.companyName }}</h2>

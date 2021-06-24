@@ -1,6 +1,7 @@
 mat-card {
     background: white;
     color: black;
+    height: 250px;
 }
 
 .bold {
@@ -14,8 +15,22 @@ h3 {
 .edu-details {
     width: 500px;
     margin: auto;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .color-blue {
     color: blue;
+}
+
+@media (max-width: 500px) {
+    .edu-details {
+        width: 80%;
+        height: 700px;
+    }
+    mat-card {
+        height: 300px;
+    }
 }
