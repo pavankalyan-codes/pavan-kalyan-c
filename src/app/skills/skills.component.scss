@@ -89,14 +89,6 @@ $java: brown;
 
 @media (max-width: 600px) {
     .skill-icons {
-        i {
-            height: 40px;
-            width: 40px;
-            font-size: 25px;
-        }
-    }
-    .image-icon {
-        height: 40px;
-        width: 40px;
+        flex-wrap: wrap;
     }
 }
