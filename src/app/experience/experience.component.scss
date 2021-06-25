@@ -6,6 +6,8 @@
 h2 {
     text-align: center;
     margin: 0;
+    font-size: 20px;
+    align-self: center;
 }
 
 h5 {
@@ -30,14 +32,12 @@ mat-card {
     color: grey;
 }
 
-.exp-content {
-    padding: 100px;
+mat-card {
+    width: 80%;
+    margin: auto;
 }
 
 @media (max-width: 500px) {
-    .exp-content {
-        padding: 20px;
-    }
     .role {
         margin-top: 10px;
     }

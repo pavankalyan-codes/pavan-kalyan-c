@@ -1,5 +1,29 @@
 <section id="content3" class="sec-3">
     <h1 class="bg-black color-white p-10">Projects</h1>
 
-    <p></p>
+    <div class="projects">
+        <div *ngFor="let project of projects">
+            <ng-container [ngTemplateOutlet]="projectTemplate" [ngTemplateOutletContext]="{ project: project }">
+            </ng-container>
+        </div>
+    </div>
 </section>
+
+<ng-template #projectTemplate let-project="project">
+    <mat-card class="exp-card mt-3">
+        <h2>{{ project.title }}</h2>
+
+        <p>
+            {{ project.description }}
+        </p>
+
+        <p class="project-icons">
+            <button (click)="openUrl(project.codeLink)" mat-fab color="dark" aria-label="Example icon button with a home icon">
+        <i class="fab fa-github"></i>
+      </button>
+            <button (click)="openUrl(project.liveLink)" mat-fab color="dark" aria-label="Example icon button with a home icon">
+        <i class="fas fa-external-link-alt"></i>
+      </button>
+        </p>
+    </mat-card>
+</ng-template>
